@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Material Icons-->
+    <!-- More reliable link -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- CUSTOM CSS -->   
-    <link href="Newstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="Newstyle.css">
          
     <title>Executive Dashboard</title>
 </head>
@@ -18,20 +19,18 @@
             <div class="top">
                 <div class="logo">
                     <img src="https://imagecdn.mightycause.com/4258d75e-7f00-4ea5-b063-815b74ee0baf/-/crop/2294x2295/258,290/-/preview/-/resize/1800x/-/sharp/5/" alt="United Airlines Logo" width="50" height="50">
+                    <h2 class="text-muted">United<span class="LOGO2">DASH</span></h2>
                     </div>
-                    <h2 class="text-muted">United<span class="LOGO2">DASH</span>
-                    </h2>
-                    </div>
-                        <a href="#" class="active">
                         <div class="close" id="close-btn">
                              <span class="material-symbols-outlined">close</span>
-                    </a>
-                </div>
+                             </div>
+                        </div>
+
                 <div class="sidebar">
                     <nav class="menu"> 
                         <a href="#" class="active">
                             <span class="material-symbols-outlined">space_dashboard</span>
-                            <h2>Dashboard</h2></class>
+                            <h2>Dashboard</h2>
                         </a>
                         <a href="#">
                             <span class="material-symbols-outlined">bar_chart</span>
@@ -41,7 +40,6 @@
                             <span class="material-symbols-outlined">search_insights</span>
                             <h3> Customer Insights </h3>
                         </a>
-
                         <a href="#">
                             <span class="material-symbols-outlined">groups</span>
                             <h3> Customer Retention</h3>
@@ -54,56 +52,63 @@
                             <span class="material-symbols-outlined">logout</span>
                             <h3> Logout </h3>
                         </a>
-                        </div>
                     </nav> 
+                </div>
         </aside>
+
     <main> 
         <h1>Dashboard</h1>
         <div class ="date"> 
             <input type="date"> 
             </div>
             <div class="DATA">
-                <!-- GRAPH SET 1 -->
+                    <!-- GRAPH SET 1 -->
                 <div class = "customerFEEDBACK">
-                <span class = "material-symbols-outlined">analytics</span>
-                <div class="middle">
-                    <div class = "left"> 
+                    <span class = "material-symbols-outlined">analytics</span>
+                    <div class="middle">
+                     <div class = "left"> 
                         <h3> NPS Score </h3>
                         <h1> 8.5</h1>
-                        <div class = "VD1">  
-                        <svg> 
+                        <div class="VD1">  
+                            <svg> 
                             <circle cx='38' cy='38' r='36'> </circle>
-                        </svg>
-                        <div class = "number"> 
-                            <p> +4% Q4</p>
-                            </div>
-                            </div>
-                        <small class="text-muted">Q4 Report </small>
+                            </svg>
+                            <div class="number"> 
+                            <p> +4% </p>
+                            <small class="text-muted">Q4 Report</small>
+                            </div>  
                         </div>
+                    </div> 
                     </div>
-                </div> 
+                    </div>
+                 
+                
                         <!--GRAPH SET 2 -->
-                        <div class = "customerFEEDBACK">
-                <span class = "material-symbols-outlined">analytics</span>
+                <div class = "SentimentScore">
+                <span class = "material-symbols-outlined">bar_chart</span>
                 <div class="middle">
                     <div class = "left"> 
                         <h3> Sentiment Score </h3>
                         <h1> 70%</h1>
-                        <div class = "VD2">  
+                        <div class="VD2">  
                         <svg> 
                             <circle cx='38' cy='38' r='36'> </circle>
                         </svg>
-                        </div>
-                        <div class = "number"> 
-                            <p> +12% Q4</p>
+                        <div class="number"> 
+                            <p> +12% </p>
                         <small class="text-muted">Q4 Report </small>
-                    </div> 
-            </div>
-    </div>
-</div>
+                                </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+                
+                
+            
+           
                         <!-- GRAPH SET 3 -->
-                         <div class = "customerFEEDBACK">
-                <span class = "material-symbols-outlined">analytics</span>
+                         <div class = "CustomerRetention">
+                <span class = "material-symbols-outlined">finance_mode</span>
                 <div class="middle">
                     <div class = "left"> 
                         <h3> Customer Retention </h3>
@@ -113,15 +118,47 @@
                             <circle cx='38' cy='38' r='36'> </circle>
                         </svg>
                         <div class = "number"> 
-                            <p> +10% Q4</p>
+                            <p> +10%</p>
                         <small class="text-muted">Q4 Report </small>
-                        </div> 
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+
+                  <div class="FlyerFeedback">
+                    <h2>Flyer Feedback</h2>
+                    <table> 
+                        <thead> 
+                            <tr> 
+                            <th>Feedback </th>
+                            <th>Source</th>
+                            <th> Frequent Flyer</th>
+                            <th> Date</th>
+                            </tr>
+                        </thead> 
+                    <tbody> 
+                        <tr>
+                            <tdj class = "warning"><td> Survey not sent</td></tdj>
+                            <td>Twitter</td>
+                            <tdj class = "warning"><td>Pending</td></tdj>
+                            <td class="primary">Details</td>
+                            <td> 2024-01-15</td> 
+ 
+                            </tr>
+                        </tbody> 
+                    </table> 
+                    <a href ="#">Show ALL</a>
+
+
+                  </div>  
+            </div>
+        </div>
+</div>
 </main> 
+</div> 
+</body>
+            
 
     
 

@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #738oec;
+    --color-primary: #7380ec;
     --color-danger: #ff7782;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
@@ -139,8 +139,8 @@ b {
     color: var(--color-danger);
 }
 aside {
-    height: 100vh; 
-    background: gray; 
+    height: 100vh;  
+    
 
 
 }
@@ -193,6 +193,7 @@ aside .sidebar a{
 aside .sidebar a span{
     font-size:1.6rem; 
     transition: all 300ms ease; 
+    color:var(--color-info-dark);
 
 
 }
@@ -202,14 +203,14 @@ aside .sidebar a:last-child{
     width:100%; 
 
 }
-.aside sidebar a.active{
+aside .sidebar a.active{
     background: var(gray); 
     color:var(--color-primary); 
     margin-left:0; 
     
 }
 aside .sidebar a.active:before{
-    margin-left:-2rem;
+    margin-left:-1rem;
     content: ""; 
     width:6px; 
     height: 100%; 
@@ -217,7 +218,8 @@ aside .sidebar a.active:before{
 }
 aside .sidebar a.active span{
     color:var(--color-primary); 
-    margin-left: calc(1rem - 3px); 
+    margin-left: calc(1rem - 6px);
+
 }
 aside .h2 a:hover{
     color:blue; 
@@ -227,7 +229,9 @@ aside .sidebar a:hover{
     color:blue;  
 }
 aside .sidebar a:hover span{
-    margin-left:1rem;    
+    color:blue;
+    margin-left:1rem;
+    transition: all 300ms ease;     
 }
 
 /* -------------- Main --------------- */
@@ -249,10 +253,12 @@ main .date input[type="date"]{
     color:var(--color-dark); 
 
 } 
-main .DATA{
+.DATA{
     display:grid; 
-    grid-template-columns:repeat(3,1fr); 
+    grid-template-columns:repeat(3,1fr);
     gap:1.8rem;
+    margin-bottom:2rem; 
+    width:100%
 }
 
 main .DATA > div{
@@ -270,9 +276,189 @@ main .DATA > div:hover{
 
 }
 main .DATA > div span{
-    background:coral; 
+    background:var(--color-primary); 
     padding:0.5rem; 
     border-radius:50%;
     font-size:2rem;
 }
+main .DATA > div.customerFEEDBACK span{
+    background-color:var(--color-primary);
 
+
+}
+main .DATA > div.SentimentScore span{
+    background-color:var(--color-success); 
+
+
+}
+main .DATA > div.CustomerRetention span{
+    background-color:var(--color-danger); 
+
+}
+main .DATA > div .middle{
+    display:flex; 
+    align-items: center; 
+    justify-content:space-between; 
+
+}
+main .DATA h3{
+    margin: 1rem 0 0.6rem; 
+    font-size: 1rem; 
+}
+main .DATA .VD1,.VD2,.VD3{
+    position:relative; 
+    width:92px; 
+    height:92px; 
+    border-radius:50%; 
+
+
+}
+main .svg{
+    width:7rem; 
+    height:7rem; 
+    align-items:right;
+
+}
+main .DATA svg{
+    width:7rem;
+    height:7rem; 
+}
+main .DATA svg circle{
+    fill:none; 
+    stroke:var(--color-primary); 
+    stroke-width:14; 
+    stroke-linecap: round; 
+    transform:translate(5px,5px); 
+    stroke-dasharray: 110; 
+    stroke-dashoffset: 92; 
+}
+main .DATA .VD1 circle{
+    stroke-dashoffset: -30; 
+    stroke-dasharray: 200; 
+
+}
+main .DATA .VD2 circle{
+    stroke-dashoffset:20; 
+    stroke-dasharray:200; 
+
+
+}
+main .DATA .VD3 circle{
+    stroke-dashoffset: 35; 
+    stroke-dasharray:110; 
+}
+main .DATA .number p{
+    position:absolute;  
+    top: 0; 
+    left: 0;  
+    height:100%; 
+    width:100%; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+}
+main .DATA .small{ 
+    margin-top:1.6rem; 
+    display: block; 
+
+
+}
+main .FEEdback{
+    margin-top:2rem; 
+
+}
+main .FEEDBACK h2{
+    margin-bottom:0.8rem; 
+
+}
+main .FEEDBACK table{ 
+    background:var(--color-white); 
+    width:100%; 
+    border-radius:var(--card-border-radius); 
+    padding:var(--card-padding); 
+    text-align:center;
+    box-shadow:var(--box-shadow);
+    transition: all 300ms ease; 
+
+
+}
+main .FEEDBACK table:hover{
+    box-shadow:none; 
+
+
+}
+ main .FlyerFeedback h2{
+    margin-bottom:0.8rem; 
+
+ }
+ div.FlyerFeedback{
+    width:267%;
+ }
+.FlyerFeedback table{ 
+    background:var(--color-white); 
+    width:100%; 
+    border-radius:var(--card-border-radius); 
+    margin-right:2.5rem; 
+     
+    
+} 
+main table tbody td{
+    height:2.8rem; 
+    border-bottom: 1px solid var(--color-light); 
+    color:var(--color-dark-variant); 
+
+}
+main table tbody td last-child td{
+    border:none; 
+}
+main .FlyerFeedback a{
+    text-align:center; 
+    display:block; 
+    margin:1rem auto; 
+
+}
+main .FlyerFeedback a:hover{
+    color: var(--color-primary); 
+}
+.right .profile{
+    margin-left:auto;    
+
+
+}
+.right .top{
+    display:flex; 
+    justify-content:end; 
+    gap:2rem; 
+    
+
+}
+.right .top button{ 
+    display:none; 
+
+}
+.right .theme-toggler{
+    background:var(--color-light); 
+    display:flex-end;
+    justify-content:space-between; 
+    align-items:center; 
+    height:1.6rem; 
+    width:4.2rem; 
+    cursor:pointer; 
+}
+.right .message{
+    overflow-wrap:break-word;
+    align-items:2rem;     
+
+}
+
+.right .recent-updates{
+    margin-left:auto; 
+}
+
+right .profile-photo{ 
+ margin-left: auto; 
+
+}
+.right .info{
+    margin-left:-13rem; 
+}
