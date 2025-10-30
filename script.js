@@ -1,17 +1,16 @@
+const sideMENU = document.querySelector("aside"); 
+const menuBtn = document.querySelector("#menu-btn"); 
+const CloseBtn = document.querySelector("#close-btn"); 
+const themeToggler=document.querySelector(".theme-Toggler")
 
-let  sideBAROPEN = false; 
-let  sidebar = document.getElementById("sidebar"); 
+menuBtn.addEventListener('click', () => {
+    sidemenu.style.display='block';
+})
+CloseBtn.addEventListener('click',() => {
+    sideMenu.style.display='none'; 
 
-function opensideBAR(){ 
-    if(sideBAROPEN); 
-    sidebar.classList.add("sidebar-responsive"); 
-    sidebarOPEN = true; 
-}
-
-function closesideBAR(){
-    if(sideBAROPEN){
-        sidebar.classListRemove("sidebar-responsive"); 
-        'sidebarOPEN' = false; 
-    }
-}
-
+} )
+themeToggler.addEventListener('click',() => {
+    document.body.classList.toggle('dark-theme-variables'); 
+})
+themeToggler.querySelector('span').classList.toggle('active'); 
